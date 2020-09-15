@@ -1,0 +1,945 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #23282d;
+    width: 100%
+}
+
+h1, h2, h3, h4, p, a {
+    font-style: italic;
+    text-align: center;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+}
+/*--------------Navegacion----------
+barra de menu// imagen de fondo  */
+.header {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.header h1, p {
+    position: absolute;
+    margin: auto;
+}
+
+.header a h1 {
+    font-size: 50px;
+    margin: auto 22%;
+    margin-top: 10%;
+}
+
+.navegacion #menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px 15px;
+}
+
+#menu li a {
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    padding: 10px;
+}
+
+#menu li a:hover {
+    border: 1px solid rgb(46, 194, 118);
+    color: rgb(46, 194, 118);
+    background: rgba(0, 0, 0, .3);
+}
+
+#menu li:hover>ul {
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+}
+
+#menu li ul {
+    display: none;
+    width: 125%;
+    height: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    position: absolute;
+}
+
+#menu li ul li {
+    float: right;
+    margin: auto;
+}
+/*--------------Maain----------
+todos los contenidos de las paginas // imagenes de fondo, formularios, contactos, etc   */
+
+.main {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0px;
+    width: 100%;
+}
+
+.main img {
+    width: 70%;
+    height: 55%;
+}
+
+/*--------------Contenedos con las imagenes de la portada----------
+// imagen de fondo  */
+.studio {
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.studio h2, p {
+    position: absolute;
+}
+
+.studio h2 {
+    transform: translateX(-100%);
+    margin-top: -70px;
+    color: #ffff;
+    text-align: center;
+}
+
+.studio p {
+    transform: translateX(0%);
+    margin: -45px 20px 10px 20px;
+    color: rgb(210, 38, 97);
+    line-height: -0.1px;
+}
+
+.studio-img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.studio-img img {
+    margin: 5% 15%;
+}
+
+.studio-img p {
+    transform: translateX(0%);
+    margin: -54px 14% 0 14.5%;
+    text-align: center;
+    width: 66.7%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+/*--------------Contenedor de los productos de la pagina de hardware ----------
+texto, imagenes de fondo boton de compra entre otros  */
+.tattoist {
+    border-top: 5px solid rgb(46, 194, 118);
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tattoist h2 {
+    margin: 10px auto;
+    color: #952ce7;
+}
+
+.tattoist p {
+    position: relative;
+    transform: translateX(0%);
+    line-height: -0.1px;
+    color: rgb(69, 174, 187);
+    margin: -5px 20px 10px 20px;
+}
+
+.tattoist-perfil {
+    clear: both;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.tattoist-perfil img {
+    position: absolute;
+    width: 350px;
+    height: 200Px;
+    transform: translate(7.8%, 13%);
+}
+
+.tattoist-perfil p {
+    margin: -5px 20px 10px 20px;
+}
+
+.tattoist-perfil ul .buy{
+    clear: both;
+    width: 80px;
+    margin:15px 40%;
+    padding: 10px 50px;
+    color: #fff;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.tattoist-perfil ul .buy:hover {
+    background: #952ce7;
+    color: #fff;
+}
+
+
+.tattoist-perfil ul {
+    position: absolute;
+    transform: translate(7.7%, 88.5%);
+    width: 79%;
+    height: auto;
+    padding: 20px;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(20, 20, 20, 0.7);
+}
+.tattoist-perfil ul:hover{
+    opacity: 1;
+}
+
+/*--------------Galeria de productos del sitio Web ----------  */
+.galery {
+    border-top: 5px solid rgb(46, 194, 118);
+    margin: 0 auto 2% 1%;
+    width: 74%;
+    float: left;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    display: flow-root;
+}
+
+.galery h2 {
+    color: #952ce7;
+    margin: 10px auto;
+}
+
+.galery-img {
+    display: flex;
+    display: flow-root;
+    height: auto;
+}
+
+.galery-img img {
+    width: 42.5%;
+    height: 150px;
+    margin-left: 5%;
+    box-shadow: 4px 4px 8px 4px rgba(77, 176, 148, .82);
+    margin-top: 5%;
+}
+
+.galery-img img:hover {
+    transform: scale(110%);
+    transition-duration: 2s;
+}
+
+.galery-img p {
+    margin: auto;
+    padding: 10px;
+    width: 38%;
+    text-align: center;
+    transform: translate(11.5%, -171%);
+    background-color: rgba(20, 20, 20, 0.5);
+    color: rgb(46, 194, 118);
+    font-size: 12px;
+}
+
+/*--------------Contacto de los creadores del proyecto */
+.contact {
+    border-top: 5px solid rgb(46, 194, 118);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact h2, .contact-tattoist h3 {
+    color: #952ce7;
+    margin: 10px auto;
+}
+
+.contact-old {
+    display: inline-flex;
+    align-items: center;
+    width: 90%;
+    height: 130px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-old img {
+    width: 150px;
+    height: 130px;
+}
+
+.contact-old ul {
+    color: rgb(69, 174, 187);
+    text-align: left;
+    margin: 10px;
+    padding: 10px 5px;
+    width: 250Px;
+    height: 110px;
+}
+
+.contact-tattoist {
+    width: 100%;
+    height: 350px;
+}
+
+.contact-tattoist .contact-old {
+    margin-bottom: 5%;
+}
+/*--------------------------formulario de Comprar------------------*/
+input[type=text], input[type=password], input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(46, 194, 118);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+label{
+    color: rgb(0,0,0);
+    text-shadow: 0 2px 1px 2px rgba(0,0,0,.8);
+}
+input{
+    padding: 10px;
+    margin: 5px;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #952ce7;
+    border-radius: 25px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+}
+.close {
+
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #952ce7;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+/*--------------Pie de pagina ------------------*/
+.foter {
+    clear: both;
+    width: 100%;
+    height: 200px;
+    margin: 20px auto;
+    border-top: 5px solid rgb(46, 194, 118);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    align-items: center;
+}
+
+.foter p {
+    transform: translate(9%, 10%);
+}
+
+.pie-der {
+    align-items: center;
+    text-align: center;
+    color: #952ce7;
+    width: 250px;
+    height: 150px;
+    margin: 10px auto;
+    font-size: 25px;
+}
+
+.pie-der img {
+    width: 60px;
+    height: 50px;
+    margin: auto;
+}
+
+.pie-der p {
+    clear: both;
+    width: 250px;
+    height: auto;
+    transform: translate(0%, -30%);
+}
+
+.pie-izq ul {
+    width: 125px;
+    height: 30px;
+    margin: auto;
+    margin-top: -25px;
+    display: flex;
+    align-self: center;
+}
+
+.pie-izq ul li i {
+    font-size: 23px;
+    margin-top: 2px;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+.pie-izq ul li i:hover {
+    color: rgb(46, 194, 118);
+    transform: scale(110%);
+    transition-duration: 0.5s;
+}
+/* ------------------------responsve--------------------------*/
+/*---------------
+-
+-
+-
+-
+----------------resolucion de pantalla desde 480px hasta 667px-
+-
+-
+-
+-
+-
+*/
+@media (min-width:480px) {
+    .header h1 {
+        transform: translateX(65%);
+        margin: 100px auto 0 auto;
+        font-size: 70px;
+    }
+
+    .header p {
+        transform: translateX(165%);
+        margin: 170px auto 0 auto;
+        font-size: 25px;
+    }
+
+    .navegacion #menu {
+        transform: translateX(30%);
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .studio h2 {
+        transform: translateX(50%);
+        margin-top: -100px;
+    }
+
+    .main {
+        margin-top: 50px;
+    }
+
+    .studio-img {
+        display: flex;
+        display: flow-root;
+        justify-content: space-between;
+        width: 100%;
+        height: 400px;
+        margin: auto;
+    }
+
+    .studio-img img {
+        width: 250Px;
+        height: 150px;
+        margin: 20px 0 20px 15px;
+    }
+
+    .studio-img p {
+        display: inline-flex;
+        transform: translate(-115%, 650%);
+        width: 250px;
+        height: 30px;
+        margin-left: 35px;
+    }
+
+    .tattoist-perfil {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tattoist-perfil img {
+        transform: translate(0%);
+        display: flex;
+        position: relative;
+        width: 45%;
+        height: 80%;
+        margin: 20px 0 20px 20px;
+    }
+
+    .tattoist-perfil ul {
+        position: relative;
+        width: 40%;
+        height: auto;
+        margin: 20px 20px 20px 0;
+        text-align: left;
+        transform: translate(0%);
+    }
+
+    .foter p {
+        transform: translate(17%);
+    }
+
+    .pie-der p {
+        transform: translate(0%, -30%);
+    }
+}
+
+/*
+-
+-
+-
+-
+----------------resolucion de pantalla desde 668px hasta 1023px-
+-
+-
+-
+*/
+@media (min-width:668px) {
+    .header h1 {
+        transform: translateX(80%);
+    }
+
+    .header p {
+        transform: translate(185%);
+    }
+
+    .navegacion #menu {
+        transform: translate(40%);
+    }
+
+    .studio h2 {
+        transform: translate(70%);
+    }
+
+    .studio-img {
+        height: 500%;
+    }
+
+    .studio-img img {
+        width: 300Px;
+        height: 200px;
+        margin: 20px 0 20px 15px;
+    }
+
+    .studio-img p {
+        display: inline-flex;
+        transform: translate(-112%, 810%);
+        width: 300px;
+        height: 30px;
+        margin-left: 35px;
+    }
+
+    .foter {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pie-der {
+        margin-left: 40px;
+    }
+
+    .pie-izq {
+        margin-right: 150px;
+    }
+
+    .foter p {
+        transform: translate(0%, 400%);
+    }
+
+    .pie-der p {
+        transform: translate(0%, -30%);
+    }
+
+    .pie-izq ul li i {
+        font-size: 30px;
+        margin-top: 2px;
+        margin-left: 25px;
+    }
+}
+
+/*
+-
+-
+-
+-
+----------------resolucion de pantalla desde 1024px
+-
+-
+-
+*/
+
+    /*----------------
+-
+-
+------------Navegacion -------------------
+-
+-
+-
+-*/
+@media (min-width:1024px) {
+    .header h1 {
+        margin: 6% 17%;
+        color: #ffff;
+        text-shadow: 2px 2px 10px rgb(19, 45, 111);
+    }
+
+    .header p {
+        margin: 12% 20%;
+        color: #ffff;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+    .header-con {
+        width: 99%;
+        height: 15px;
+        margin: auto;
+    }
+
+    .navegacion {
+        position: relative;
+        width: 99%;
+        height: 55px;
+        margin: auto;
+        margin-top: 5px;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .77);
+        align-items: center;
+    }
+
+    .header .navegacion img, .navegacion img {
+        height: 45px;
+        width: 40px;
+        float: left;
+        margin: 5px 0 5px 15px;
+        border-radius: 15px;
+    }
+
+    .header img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .navegacion #menu {
+        margin: 5px 35% auto 20%;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+
+    /*----------------
+    -
+    -
+    ------------Main //  edita contenedores del cuerpo o contenido principal
+                de todas las vistas -------------------
+    -
+    -
+    -
+    -*/
+    .studio {
+        margin: 0 auto 2% 1%;
+        width: 74%;
+        float: left;
+        background-color: #ffff;
+    }
+
+    .studio h2 {
+        margin: -50px 30% 0 12%;
+    }
+
+    .studio-img {
+        width: 40%;
+        margin: 10px 25px 10px 50px;
+        align-items: center;
+        display: inline-block;
+        box-shadow: 4px 4px 8px 4px rgba(77, 176, 148, .82);
+    }
+
+    .studio-img:hover {
+        box-shadow: 4px 4px 4px rgba(77, 176, 148, .82);
+        transform: scale(103%, 103%);
+        transition-duration: 1.5s;
+    }
+
+    .studio-img img {
+        width: 100%;
+        height: 300px;
+        margin: auto;
+    }
+
+    /*----------------
+    -
+    -
+    ------------Article // editamos los container de la
+                etiqueta article que almacena los videos
+                laterales de la pagina web-------------------
+    -
+    -
+    -
+    -*/
+    .article {
+        float: right;
+        margin: auto;
+        width: 20%;
+    }
+
+    .studio video {
+        display: flex;
+        margin: auto;
+    }
+
+    .galery-img img {
+        width: 300px;
+        height: 250px;
+        margin: 10px;
+    }
+    /*------------- Contenedor de productos--------------*/
+    .tattoist {
+        display: inline-flex;
+        display: flow-root;
+        margin: 5% auto;
+    }
+/*-------------producto----------------*/
+    .tattoist-perfil {
+        display: block;
+        width: 80%;
+        height: 500px;
+        margin-top: 20px;
+        align-content: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .tattoist-perfil img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .tattoist-perfil ul {
+        position: absolute;
+        width: 96.5%;
+        height: 200px;
+        margin: 260px 0 0 0;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .galery-img img {
+        width: 30%;
+        height: 300px;
+        margin: 0 0 0 2.4%;
+    }
+
+    /*-------------------contct------------------------*/
+    .contact-old {
+        width: 300px;
+        height: 350px;
+        display: block;
+        margin: auto;
+    }
+
+    .contact-tattoist {
+        display: inline-flex;
+        width: 70%;
+        height: auto;
+        align-items: center;
+        margin: auto 15%;
+    }
+
+    .contact-tattoist h3 {
+        clear: both;
+        padding: 10px;
+        font-size: 25px;
+        transform: translate(175%, -17%);
+    }
+
+    .contact-tattoist .contact-old {
+        align-items: center;
+    }
+
+    .contact-old img {
+        width: 225px;
+        height: 175px;
+        margin: 10px 40px;
+        border-radius: 25px;
+    }
+
+    .contact-old ul {
+        width: 250px;
+        height: 150px;
+        margin: auto 35px;
+    }
+
+
+
+    /* -------------------pie de pagina--------------------*/
+    .foter {
+        clear: both;
+        width: 99%;
+        height: 400px;
+        margin: auto;
+        margin-bottom: 5px;
+        display: flex;
+        display: flow-root;
+        overflow: hidden;
+    }
+
+    .pie-der {
+        margin: 5% 10% auto 2%;
+        float: left;
+    }
+
+    .pie-der p {
+        margin: auto 1%;
+    }
+
+    .pie-der img {
+        width: 60px;
+        height: 60px;
+        margin-top: 5%;
+        border-radius: 25px;
+    }
+
+    .pie-center {
+        display: inline-block;
+        width: 125px;
+        height: auto;
+        margin: 5% 1%;
+    }
+
+    .pie-center ul li a, .pie-izq ul li a {
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+    }
+
+    .pie-center ul li a:hover {
+        text-shadow: 2px 2px 3px rgb(210, 38, 97);
+    }
+
+    .pie-izq {
+        float: right;
+        margin: 8% 4% auto auto;
+    }
+
+    .pie-izq ul {
+        width: 175px;
+        height: 150px;
+        display: block;
+    }
+
+    .pie-izq ul li a i {
+        font-size: 25px;
+        margin: 5px;
+    }
+}
